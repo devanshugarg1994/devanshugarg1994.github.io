@@ -82,11 +82,12 @@
   .btn:hover { transform: translateY(-2px); border-color: var(--accent); }
   .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
 
-  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 44px; }
+  .stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 44px; }
   .stat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
   .stat b { display: block; font-size: 26px; font-weight: 800; }
   .stat span { font-size: 13px; color: var(--muted); }
-  @media (max-width: 720px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 860px) { .stats { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 560px) { .stats { grid-template-columns: repeat(2, 1fr); } }
 
   /* Sections */
   section { padding: 48px 0; }
@@ -116,6 +117,9 @@
   .art-block { background: linear-gradient(135deg, #3b82f6, #22d3ee); }
   .art-teen { background: linear-gradient(135deg, #b91c1c, #f59e0b); }
   .art-word { background: linear-gradient(135deg, #7c3aed, #ec4899); }
+  .art-ad { background: linear-gradient(135deg, #f43f5e, #f97316); }
+  .art-react { background: linear-gradient(135deg, #0ea5e9, #6366f1); }
+  .art-react2 { background: linear-gradient(135deg, #14b8a6, #0ea5e9); }
   .card-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
   .card h3 { margin: 0; font-size: 18px; }
   .card p { margin: 0; color: var(--muted); font-size: 14px; }
@@ -152,6 +156,8 @@
     <a class="logo" href="#">Devanshu<span>.</span></a>
     <div class="nav-links">
       <a href="#games">Games</a>
+      <a href="#playables">Playable Ads</a>
+      <a href="#react">React</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -161,9 +167,9 @@
 
 <header class="hero">
   <div class="wrap">
-    <span class="badge">Open to remote roles · Any timezone · Available now</span>
-    <h1>Devanshu Garg<br><span class="grad">Game Engineer &amp; Tech Lead</span></h1>
-    <p class="lead">8 years shipping commercial games: <b>casual mobile games in C++/Cocos2d-x</b> and <b>HTML5 games in TypeScript with Cocos Creator and PixiJS</b>. I lead teams, own architecture and code review, and drive AI-first workflows with Claude Code and Cursor.</p>
+    <span class="badge">Open to remote roles or relocation to Bengaluru · Available now</span>
+    <h1>Devanshu Garg<br><span class="grad">Game &amp; Frontend Engineer · Tech Lead</span></h1>
+    <p class="lead">8 years shipping commercial games and web products: <b>casual mobile games</b>, <b>HTML5 games</b>, <b>15+ playable ads</b> and <b>React front ends</b> for games and platforms. I lead teams, own architecture and code review, embed games in host apps (iframes, WebViews in Android and iOS apps), and build native Android features through JNI.</p>
     <div class="actions">
       <a class="btn primary" href="#games">▶ See my games</a>
       <a class="btn" href="Devanshu_Garg_Resume.pdf" target="_blank" rel="noopener">⬇ Resume</a>
@@ -173,6 +179,7 @@
     <div class="stats">
       <div class="stat"><b>8 yrs</b><span>shipping games</span></div>
       <div class="stat"><b>10+</b><span>games shipped</span></div>
+      <div class="stat"><b>15+</b><span>playable ads</span></div>
       <div class="stat"><b>Top 60</b><span>on Games Global</span></div>
       <div class="stat"><b>+30%</b><span>DAU from FTUE work</span></div>
     </div>
@@ -260,25 +267,111 @@
   </div>
 </section>
 
+<section id="playables">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Playable Ads</h2>
+      <p>15+ playable ads built for user acquisition</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="thumb art art-ad">▶</div>
+        <div class="card-body">
+          <h3>15+ Playable Ads</h3>
+          <p>Built more than 15 interactive playable ads that let players try the core game loop in seconds, ending in a CTA / end card that drives installs.</p>
+          <div class="tags"><span class="tag hl">15+ shipped</span><span class="tag">HTML5</span><span class="tag">User Acquisition</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb art art-ad">⚡</div>
+        <div class="card-body">
+          <h3>MRAID &amp; Ad Networks</h3>
+          <p>Integrated MRAID and CTA flows, and kept builds small and fast-loading to meet ad network size and load-time limits.</p>
+          <div class="tags"><span class="tag">MRAID</span><span class="tag">CTA / End Cards</span><span class="tag">Load-Time Optimization</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb art art-ad">A/B</div>
+        <div class="card-body">
+          <h3>Testing &amp; Iteration</h3>
+          <p>Built variations for different markets, iterated on A/B test results, and produced seasonal themed versions (Halloween, New Year and other events).</p>
+          <div class="tags"><span class="tag">A/B Testing</span><span class="tag">Market Variations</span><span class="tag">Seasonal Themes</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="react">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>React Front End</h2>
+      <p>React &amp; TypeScript in production</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="thumb art art-react">⚛</div>
+        <div class="card-body">
+          <h3>Game GUI as a Mobile WebView</h3>
+          <p>Built the game GUI (HUD, paytables, game screens) as a React micro-frontend shipped as a WebView inside Android and iOS apps, connected to the game and platform SDK through a secure PostMessage layer.</p>
+          <div class="tags"><span class="tag hl">Micro-frontend</span><span class="tag">React</span><span class="tag">WebView</span><span class="tag">PostMessage</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb art art-react2">▤</div>
+        <div class="card-body">
+          <h3>Reusable Component Library</h3>
+          <p>Engineered a React component library shared across 3 product modules, cutting feature development time by about 30%.</p>
+          <div class="tags"><span class="tag hl">~30% faster delivery</span><span class="tag">React</span><span class="tag">TypeScript</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb art art-react">⇄</div>
+        <div class="card-body">
+          <h3>API Integration with React Query</h3>
+          <p>Integrated complex REST APIs with React Query for client-side caching, background refetching and smooth UI updates.</p>
+          <div class="tags"><span class="tag">React Query</span><span class="tag">REST</span><span class="tag">Caching</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb art art-react2">↗</div>
+        <div class="card-body">
+          <h3>Deep-Link React SPA</h3>
+          <p>Built a React single-page app for game deep-link pages showing offers, events and game details, so players could jump straight into promotions.</p>
+          <div class="tags"><span class="tag">React SPA</span><span class="tag">Deep Links</span><span class="tag">Crashlytics</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb art art-react">⧉</div>
+        <div class="card-body">
+          <h3>Games Embedded in a Host App</h3>
+          <p>Embedded slot games in the host platform via iframes, with a secure PostMessage bridge syncing data between game and host.</p>
+          <div class="tags"><span class="tag">iframes</span><span class="tag">Cross-Origin Security</span><span class="tag">PostMessage</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="experience">
   <div class="wrap">
     <div class="section-head"><h2>Experience</h2></div>
     <div class="timeline">
       <div class="job">
         <div class="job-top"><h3>Frontend Engineer · <span>A5 Labs (WPT Global Poker)</span></h3><span class="when">Apr 2026 – Aug 2026</span></div>
-        <p>Built features for the WPT Global desktop poker client in Cocos Creator and TypeScript: real-time table UI driven by WebSockets, Figma-to-prefab UI, localization. Used Claude Code daily.</p>
+        <p>Built features for the WPT Global desktop poker client in Cocos Creator and TypeScript: real-time table UI driven by WebSockets, Figma-to-prefab UI and localization. Fixed and updated the notification system through JNI bridges to native Android.</p>
       </div>
       <div class="job">
-        <div class="job-top"><h3>Software Consultant / Tech Lead · <span>TeamPilot (Client: Snowborn Games)</span></h3><span class="when">May 2024 – Mar 2026</span></div>
-        <p>Led teams shipping slot games, including Massive Christmas MAXXED (Top 60 on Games Global). Built an internal game-hosting platform, led team-wide AI adoption, and monitored releases with Datadog.</p>
+        <div class="job-top"><h3>Tech Lead · <span>TeamPilot (Client: Snowborn Games)</span></h3><span class="when">May 2024 – Mar 2026</span></div>
+        <p>Led teams shipping slot games, including Massive Christmas MAXXED (Top 60 on Games Global). Embedded slot games in the host platform via iframes with a secure PostMessage bridge, built an internal game-hosting platform that replaced a third-party SDK, built the in-game HUD, and mentored lead, senior and mid-level engineers.</p>
       </div>
       <div class="job">
         <div class="job-top"><h3>Senior Software Developer / Lead · <span>Octro</span></h3><span class="when">Oct 2023 – May 2024</span></div>
-        <p>Worked on Teen Patti and multiplayer casual titles in C++/Cocos2d-x. Built a React micro-frontend architecture and deep-link pages for offers and events.</p>
+        <p>Worked on Teen Patti and multiplayer casual titles in C++/Cocos2d-x. Built the game GUI as a React micro-frontend shipped as a WebView inside Android and iOS apps, a reusable component library (~30% faster feature development), deep-link pages, and native Android features (notifications, haptics) through JNI.</p>
       </div>
       <div class="job">
         <div class="job-top"><h3>Software Developer II · <span>Bombay Play</span></h3><span class="when">Dec 2021 – Jun 2023</span></div>
-        <p>Built Dice Merge, Block Heads and the WordSmash MVP from scratch. Led a team of 3, cut crash rate from 0.8% to 0.5%, and owned FTUE flows that lifted DAU by 30%. Employee of the Month, Aug 2022.</p>
+        <p>Built Dice Merge, Block Heads and the WordSmash MVP from scratch and shipped them with staged rollouts. Built native Android features for the Cocos2d-x Android builds through JNI (local notifications, haptics). Led a team of 3, cut crash rate from 0.8% to 0.5%, and owned FTUE flows that lifted DAU by 30%. Employee of the Month, Aug 2022.</p>
       </div>
       <div class="job">
         <div class="job-top"><h3>Game Developer · <span>Ingenuity Gaming</span></h3><span class="when">Aug 2018 – Aug 2021</span></div>
@@ -293,9 +386,11 @@
     <div class="section-head"><h2>Skills</h2></div>
     <div class="skills">
       <div class="skill"><h4>Languages</h4><div class="tags"><span class="tag">C++</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">HTML5</span></div></div>
-      <div class="skill"><h4>Engines</h4><div class="tags"><span class="tag">Cocos2d-x</span><span class="tag">Cocos Creator</span><span class="tag">PixiJS</span><span class="tag">Phaser</span><span class="tag">WebGL</span></div></div>
+      <div class="skill"><h4>Engines</h4><div class="tags"><span class="tag">Cocos2d-x</span><span class="tag">Cocos Creator</span><span class="tag">PixiJS</span><span class="tag">Phaser</span><span class="tag">WebGL</span><span class="tag">Three.js</span><span class="tag">Box2D</span></div></div>
       <div class="skill"><h4>Performance</h4><div class="tags"><span class="tag">Memory profiling</span><span class="tag">Object pooling</span><span class="tag">Draw calls</span><span class="tag">Texture atlases</span></div></div>
-      <div class="skill"><h4>AI &amp; Tools</h4><div class="tags"><span class="tag">Claude Code</span><span class="tag">Cursor</span><span class="tag">Git</span><span class="tag">Crashlytics</span><span class="tag">Sentry</span><span class="tag">Datadog</span></div></div>
+      <div class="skill"><h4>Mobile &amp; Native</h4><div class="tags"><span class="tag">JNI (Android builds)</span><span class="tag">WebViews (Android &amp; iOS)</span><span class="tag">Games in iframes</span><span class="tag">PostMessage bridges</span><span class="tag">Staged rollouts</span></div></div>
+      <div class="skill"><h4>Frontend</h4><div class="tags"><span class="tag">React</span><span class="tag">React Query</span><span class="tag">Micro-frontends</span><span class="tag">Node.js</span><span class="tag">WebSockets</span></div></div>
+      <div class="skill"><h4>AI &amp; Tools</h4><div class="tags"><span class="tag">Claude Code</span><span class="tag">Cursor</span><span class="tag">Git</span><span class="tag">Crashlytics</span><span class="tag">Sentry</span></div></div>
     </div>
   </div>
 </section>
@@ -304,7 +399,7 @@
   <div class="wrap">
     <div class="contact">
       <h2>Let's work together</h2>
-      <p>Open to remote game engineering and tech lead roles. Happy to work in any timezone and available to start immediately.</p>
+      <p>Open to game engineering, frontend and tech lead roles, remote or in Bengaluru. Available to start immediately.</p>
       <div class="actions">
         <a class="btn primary" href="mailto:devanshugarg1994@gmail.com">✉ devanshugarg1994@gmail.com</a>
         <a class="btn" href="https://www.linkedin.com/in/devanshu-garg-842780106/" target="_blank" rel="noopener">in LinkedIn</a>
